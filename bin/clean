@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+rm -rf docs swag* .swag*
+rm -f  req* set* tox*

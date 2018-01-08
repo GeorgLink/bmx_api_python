@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+JAR1=~/.codegen/swagger-codegen/modules
+JAR2=swagger-codegen-cli/target/swagger-codegen-cli.jar 
+
+production=https://bugmark.net/api/v1/docs
+development=http://localhost:3000/api/v1/docs
+
+java -jar $JAR1/$JAR2 generate \
+     -i $development \
+     -l python \
+     -c bin/_config.json
+
